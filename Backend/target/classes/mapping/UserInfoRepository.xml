@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper  namespace= "com.hellospring.mapper.UserInfoRepository">
+      <select id="findAll" resultType="com.hellospring.entity.UserInfo">
+          select * from userInfo
+      </select>
+
+      <select id="findByEmail" resultType="com.hellospring.entity.UserInfo" parameterType="java.lang.String">
+             select * from userInfo where userEmail = #{userEmail}
+      </select>
+
+      <select id="findByEmailAndPassword"
+              resultType="com.hellospring.entity.UserInfo"
+              parameterType="java.lang.String">
+            select * from userInfo where userEmail = #{userEmail} AND userPassword = #{userPassword}
+      </select>
+
+      <select id="isEmailExit" parameterType="java.lang.String" resultType="java.lang.Boolean">
+            select * from userInfo where userEmail = #{userEmail}
+      </select>
+     <insert id="newUser" parameterType="com.hellospring.entity.UserInfo" >
+          insert into userInfo(userEmail,userName,userPassword) VALUES(#{userEmail},#{userName},#{userPassword})
+     </insert>
+
+</mapper>
+

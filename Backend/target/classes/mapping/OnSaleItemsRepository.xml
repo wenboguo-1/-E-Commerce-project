@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.hellospring.mapper.OnSaleItemRepository">
+    <insert id="addNewOnSaleItem">
+        insert into onSaleItems (productId,discount,userId) values(#{productId},#{discount},#{userId))
+    </insert>
+    <select id="">
+
+    </select>
+    <select id="getOnSaleItems"  resultType="com.hellospring.entity.OnSaleItems">
+        select productId,productImage,productName,productPrice,productDescription,productUnit,userId,numOfSold,isWishAdded,type,discount
+        from (productInfo inner join on productInfo.userId = onSaleItems.userId AND productInfo.productId = onSaleItems.productId)
+    </select>
+</mapper>
