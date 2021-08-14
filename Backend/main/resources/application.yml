@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://us-cdbr-east-04.cleardb.com:3306/heroku_c6d64d45b44181d?useUnicode=true&characterEncoding=UTF-8
+    username: b4b322fe75beb9
+    password: db6319a5
+
+mybatis:
+  mapper-locations: classpath:/mapping/*.xml
