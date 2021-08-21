@@ -11,6 +11,4 @@
  •  User can become a seller and be able to add, modify, delete and make on sale for their own items on 
     store. 
  
- •  Implemented with React Js using redux and styled component as fronted , and Spring Boot Java  
-     framework using Mybatis and Mysql as backend. Also deployed on the Vultr cloud server
 
