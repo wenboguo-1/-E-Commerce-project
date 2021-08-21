@@ -12,5 +12,5 @@
     store. 
  
  •  Implemented with React Js using redux and styled component as fronted , and Spring Boot Java  
-    framework using Mybatis and Mysql as backend. Also deployed on the Vultr cloud server
+     framework using Mybatis and Mysql as backend. Also deployed on the Vultr cloud server
 
