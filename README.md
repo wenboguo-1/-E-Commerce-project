@@ -1,14 +1,6 @@
-# E-Commerce-project
+• Designed and developed Big Bear Shopping, an e-commerce platform that allows users to create accounts and purchase groceries without face-to-face transactions for both sellers and customers
 
-•  Independently developed E-Commerce website that offers a platform only for users to purchase different 
-   kind of foods such as fruit, snacks, meats and etc in order to make people buy any food they want 
-   without face-to-face transactions under the epidemic situation.
- 
- •  Sign in and up with Gmail
- 
- •  Adding or deleting items in the shopping cart
- 
- •  User can become a seller and be able to add, modify, delete and make on sale for their own items on 
-    store. 
- 
+• Leveraged ReactJS for front-end user interface development and Spring Boot Java framework as the web framework. Deployed product on Vultr cloud server and Heroku server.
+
+• Implemented MySQL database models to store transaction data, account information, and product details
 
